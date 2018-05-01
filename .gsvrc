@@ -1,0 +1,6 @@
+{
+  "majorLabel": "Version: Major",
+  "minorLabel": "Version: Minor",
+  "patchLabel": "Version: Patch",
+  "internalLabel": "No version: Internal"
+}
