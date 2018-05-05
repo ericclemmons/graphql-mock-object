@@ -7,12 +7,12 @@ module.exports = {
   // --entry 'webpack/hot/poll?100'
   // --entry './server/index.js'
   entry: {
-    server: ["webpack/hot/poll?100", "./server"]
+    server: ["webpack/hot/poll?100", "./server"],
   },
   externals: [
     nodeExternals({
-      whitelist: ["webpack/hot/poll?100"]
-    })
+      whitelist: ["webpack/hot/poll?100"],
+    }),
   ],
   // --mode development
   mode: process.env.NODE_ENV,
@@ -20,9 +20,9 @@ module.exports = {
     // --hot
     new webpack.HotModuleReplacementPlugin(),
     // --plugin start-server-webpack-plugin
-    new StartServerPlugin()
+    new StartServerPlugin(),
   ],
   stats: "errors-only",
   // --target node
-  target: "node"
+  target: "node",
 }
