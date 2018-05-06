@@ -1,4 +1,7 @@
 {
   "name": "graphql-mock-object",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "author": "Eric Clemmons <eric@smarterspam.com>",
+  "bugs": "https://github.com/ericclemmons/graphql-mock-object/issues",
+  "repository": "https://github.com/ericclemmons/graphql-mock-object"
 }
