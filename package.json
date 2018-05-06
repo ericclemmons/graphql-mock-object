@@ -1,11 +1,16 @@
 {
   "author": "Eric Clemmons <eric@smarterspam.com>",
+  "bugs": "https://github.com/ericclemmons/graphql-mock-object/issues",
   "devDependencies": {
     "github-semantic-version": "^7.6.0",
     "oao": "^1.5.1"
   },
   "name": "graphql-mock-object",
   "private": true,
+  "repository": "https://github.com/ericclemmons/graphql-mock-object",
+  "scripts": {
+    "prepublish": "oao prepublish"
+  },
   "version": "1.0.0",
   "workspaces": [
     "examples/*",
