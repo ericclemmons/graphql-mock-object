@@ -1,3 +1,5 @@
+## 1.0.0 (2018-5-6)
+
 # Change Log
 All notable changes to this project will be documented in this file.
 

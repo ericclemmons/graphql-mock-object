@@ -8,5 +8,5 @@
   "name": "graphql-mock-object",
   "repository": "https://github.com/ericclemmons/graphql-mock-object",
   "source": "index.js",
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
