@@ -14,7 +14,7 @@
     "prerelease": "oao all microbundle",
     "release": "oao publish"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "workspaces": [
     "examples/*",
     "packages/*"
