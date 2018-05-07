@@ -3,8 +3,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2018-05-06 - [1.0.1 - current version]
+## 2018-05-06 - [1.0.4 - current version]
 
+- 1.0.4 - ([0a990eb](https://github.com/ericclemmons/graphql-mock-object/commit/0a990eb000e5cdc9f6c5775536891673b76a7823)) - Add scripts.changelog (@ericclemmons)
+- 1.0.3 - ([88fdf1b](https://github.com/ericclemmons/graphql-mock-object/commit/88fdf1b87460d50b8fb2c10c345b9250e4f3c2cf)) - yarn github-semantic-version --init (@ericclemmons)
+- 1.0.2 - ([e0dbb5b](https://github.com/ericclemmons/graphql-mock-object/commit/e0dbb5b99e0e4c5e5f76105258e0e66a725941fa)) - Attempt to fix oao publish version (@ericclemmons)
 - 1.0.1 - ([ca35224](https://github.com/ericclemmons/graphql-mock-object/commit/ca3522418748f020e931d1a15125288f01000d88)) - yarn github-semantic-version --init (@ericclemmons)
 - 1.0.0 - ([1](https://github.com/ericclemmons/graphql-mock-object/pull/1)) - MockObject (@ericclemmons)
 
