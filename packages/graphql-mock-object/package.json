@@ -1,0 +1,12 @@
+{
+  "author": "Eric Clemmons <eric@smarterspam.com>",
+  "bugs": "https://github.com/ericclemmons/graphql-mock-object/issues",
+  "dependencies": {},
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "name": "graphql-mock-object",
+  "repository": "https://github.com/ericclemmons/graphql-mock-object",
+  "source": "index.js",
+  "version": "0.0.1"
+}
