@@ -3,8 +3,9 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2018-05-06 - [1.0.0 - current version]
+## 2018-05-06 - [1.0.1 - current version]
 
+- 1.0.1 - ([ca35224](https://github.com/ericclemmons/graphql-mock-object/commit/ca3522418748f020e931d1a15125288f01000d88)) - yarn github-semantic-version --init (@ericclemmons)
 - 1.0.0 - ([1](https://github.com/ericclemmons/graphql-mock-object/pull/1)) - MockObject (@ericclemmons)
 
 ## 2018-05-04
