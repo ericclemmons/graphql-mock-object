@@ -2,12 +2,12 @@ export const MockObject = `
   type MockObject {
     Boolean: Boolean!
     Float: Float!
-    ID: ID!
+    ID(value: String): ID!
     Int: Int!
-    List: [MockObject]!
+    List(length: Int = 0): [MockObject]!
+    Mock: MockObject
     Null: String
-    Object: MockObject!
-    String: String!
+    String(value: String): String!
   }
 `
 

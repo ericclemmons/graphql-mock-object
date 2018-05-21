@@ -1,26 +1,26 @@
 import { graphiqlExpress, graphqlExpress } from "apollo-server-express"
 import bodyParser from "body-parser"
 import express from "express"
-import { makeExecutableSchema } from "graphql-tools"
+import { makeExecutableSchema, SchemaDirectiveVisitor } from "graphql-tools"
 
 // 👇 All the dependencies we need
-import { mock, MockObject, typeDefs } from "graphql-mock-object"
+import { Mock, MockObject, typeDefs } from "graphql-mock-object"
 
 const schema = makeExecutableSchema({
-  typeDefs: [
-    ...typeDefs, // 👈 All the mock types we're dependent on
-    `type Query { version: String }`,
-    `extend type Query { mock: MockObject! }`, // 👈 Add `mock` to Query
-  ],
   resolvers: {
     MockObject, // 👈 This resolves all mock properties
     Query: {
-      mock, // 👈 This is needed to query `mock`
+      Mock, // 👈 This is needed to query `Mock`
       version() {
         return require("../../../package.json").version
       },
     },
   },
+  typeDefs: [
+    ...typeDefs, // 👈 All the mock types we're dependent on
+    `type Query { version: String }`,
+    `extend type Query { Mock: MockObject! }`, // 👈 Add `mock` to Query
+  ],
 })
 
 export const app = express()

@@ -1,7 +1,9 @@
 {
   "author": "Eric Clemmons <eric@smarterspam.com>",
   "bugs": "https://github.com/ericclemmons/graphql-mock-object/issues",
-  "dependencies": {},
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
