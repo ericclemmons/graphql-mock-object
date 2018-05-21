@@ -1,6 +1,8 @@
-export { MockObject, resolvers } from "./resolvers"
-export { typeDefs } from "./typeDefs"
+import { makeExecutableSchema } from "graphql-tools"
+import { resolvers } from "./resolvers"
+import { typeDefs } from "./typeDefs"
 
-export function Mock() {
-  return {}
-}
+export const mockSchema = makeExecutableSchema({
+  resolvers,
+  typeDefs,
+})
