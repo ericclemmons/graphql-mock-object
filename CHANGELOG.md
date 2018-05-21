@@ -3,8 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2018-05-20 - [2.0.0 - current version]
+## 2018-05-20 - [3.0.0 - current version]
 
+- 3.0.0 - ([3](https://github.com/ericclemmons/graphql-mock-object/pull/3)) - Simplify usage (@ericclemmons)
+- 2.0.3 - ([edcee13](https://github.com/ericclemmons/graphql-mock-object/commit/edcee13a2f677b619f4cc503c10e696935cd67e6)) - v2.0.0 (@ericclemmons)
+- 2.0.2 - ([d048696](https://github.com/ericclemmons/graphql-mock-object/commit/d0486967fda2137c75cb981e5e6eb0fbf430c9d1)) - Convert faker ES5 => ES6 (@ericclemmons)
+- 2.0.1 - ([9c7bae4](https://github.com/ericclemmons/graphql-mock-object/commit/9c7bae4f0880ec4c7f2bf15dfa4caa5660c6a6cf)) - v2.0.0 (@ericclemmons)
 - 2.0.0 - ([2](https://github.com/ericclemmons/graphql-mock-object/pull/2)) - Faker integration (@ericclemmons)
 
 ## 2018-05-06
