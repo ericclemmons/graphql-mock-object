@@ -1,12 +1,10 @@
-import faker from "faker"
+import { fake, seed } from "faker"
 
-const { version } = require("../package.json")
+import { version } from "../package.json"
 
 // Seed is based on current version number. The intent is that any major
 // version change will yield different resultsl
-const seed = parseInt(version.match(/\d+/g).shift(), 10) || 0
-
-console.log({ seed })
+const majorVersion = parseInt(version.match(/\d+/g).shift(), 10) || 1
 
 // The resolvers
 export const MockObject = {
@@ -19,25 +17,25 @@ export const MockObject = {
   ID(parent, args) {
     const { value } = args
 
-    return faker.fake(value)
+    return fake(value)
   },
   Int() {
     return 1
   },
   List(parent, args) {
     const { length } = args
+
     return Array.from({ length }).map(() => ({}))
   },
   Mock() {
-    // Ensure repeatable results with each Mock
-    faker.seed(seed)
+    seed(majorVersion)
 
     return {}
   },
   String(parent, args) {
     const { value } = args
 
-    return faker.fake(value)
+    return fake(value)
   },
 }
 
