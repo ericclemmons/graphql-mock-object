@@ -1,27 +1,29 @@
 import { graphiqlExpress, graphqlExpress } from "apollo-server-express"
 import bodyParser from "body-parser"
 import express from "express"
-import { makeExecutableSchema, SchemaDirectiveVisitor } from "graphql-tools"
+import { makeExecutableSchema, mergeSchemas } from "graphql-tools"
 
-// 👇 All the dependencies we need
-import { Mock, MockObject, typeDefs } from "graphql-mock-object"
+// 👇 The only dependency you need
+import { mockSchema } from "graphql-mock-object"
 
-const schema = makeExecutableSchema({
+// 👇 This is your existing schema
+const defaultSchema = makeExecutableSchema({
   resolvers: {
-    MockObject, // 👈 This resolves all mock properties
     Query: {
-      Mock, // 👈 This is needed to query `Mock`
       version() {
         return require("../../../package.json").version
       },
     },
   },
-  typeDefs: [
-    ...typeDefs, // 👈 All the mock types we're dependent on
-    `type Query { version: String }`,
-    `extend type Query { Mock: MockObject! }`, // 👈 Add `mock` to Query
-  ],
+  typeDefs: `type Query { version: String! }`,
 })
+
+// In production, only use your existing schema.
+// 👇 Otherwise, merge it with `mockSchema`
+const schema =
+  process.env.NODE_ENV === "production"
+    ? defaultSchema
+    : mergeSchemas({ schemas: [defaultSchema, mockSchema] })
 
 export const app = express()
   .get("/", (req, res) => res.redirect("/graphiql"))
