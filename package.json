@@ -15,7 +15,7 @@
     "prerelease": "oao all microbundle",
     "release": "oao publish --new-version=${npm_config_init_version}"
   },
-  "version": "3.0.0",
+  "version": "3.1.0",
   "workspaces": [
     "examples/*",
     "packages/*"
