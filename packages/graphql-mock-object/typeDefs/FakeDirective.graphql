@@ -1,5 +1,0 @@
-directive @fake(
-  type: fake__Types!
-  options: fake__options = {}
-  locale: fake__Locale
-) on FIELD_DEFINITION | SCALAR

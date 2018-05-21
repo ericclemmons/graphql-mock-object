@@ -4,38 +4,13 @@ import express from "express"
 import { makeExecutableSchema, SchemaDirectiveVisitor } from "graphql-tools"
 
 // 👇 All the dependencies we need
-import {
-  directiveResolvers,
-  mock,
-  MockObject,
-  typeDefs,
-} from "graphql-mock-object"
-
-class FakeDirective extends SchemaDirectiveVisitor {
-  async visitFieldDefinition(field) {
-    console.log({ field })
-
-    return "fake"
-  }
-
-  async visitScalar(scalar) {
-    console.log({ scalar })
-
-    return "fake"
-  }
-}
+import { Mock, MockObject, typeDefs } from "graphql-mock-object"
 
 const schema = makeExecutableSchema({
-  schemaDirectives: {
-    fake: FakeDirective,
-  },
-  directiveResolvers: {
-    fake: FakeDirective,
-  },
   resolvers: {
     MockObject, // 👈 This resolves all mock properties
     Query: {
-      mock, // 👈 This is needed to query `mock`
+      Mock, // 👈 This is needed to query `Mock`
       version() {
         return require("../../../package.json").version
       },
@@ -44,15 +19,9 @@ const schema = makeExecutableSchema({
   typeDefs: [
     ...typeDefs, // 👈 All the mock types we're dependent on
     `type Query { version: String }`,
-    `extend type Query { mock: MockObject! }`, // 👈 Add `mock` to Query
-    `directive @fake on FIELD | SCALAR`,
+    `extend type Query { Mock: MockObject! }`, // 👈 Add `mock` to Query
   ],
 })
-
-// @TODO use attachDirectiveResolvers({
-//  schema,
-//  directiveResolvers,
-//  });
 
 export const app = express()
   .get("/", (req, res) => res.redirect("/graphiql"))
