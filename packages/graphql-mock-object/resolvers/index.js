@@ -39,6 +39,13 @@ export const MockObject = {
   },
 }
 
+export const Query = {
+  Mock() {
+    return {}
+  },
+}
+
 export const resolvers = {
   MockObject,
+  Query,
 }

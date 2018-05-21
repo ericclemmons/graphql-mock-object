@@ -11,4 +11,10 @@ export const MockObject = `
   }
 `
 
-export const typeDefs = [MockObject]
+export const Query = `
+  type Query {
+    Mock: MockObject
+  }
+`
+
+export const typeDefs = [MockObject, Query]
