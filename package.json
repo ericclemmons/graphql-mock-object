@@ -11,6 +11,7 @@
   "repository": "https://github.com/ericclemmons/graphql-mock-object",
   "scripts": {
     "changelog": "github-semantic-version --init",
+    "dev": "cd examples/graphiql-example && yarn start",
     "prepublish": "oao prepublish",
     "prerelease": "oao all microbundle",
     "release": "oao publish --new-version=${npm_config_init_version}"
