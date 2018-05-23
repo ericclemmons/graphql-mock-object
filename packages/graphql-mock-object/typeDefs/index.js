@@ -5,7 +5,7 @@ export const MockObject = `
     ID(value: String): ID!
     Int: Int!
     List(length: Int = 0): [MockObject]!
-    Mock: MockObject
+    Mock(seed: Int): MockObject
     Null: String
     String(value: String): String!
   }
@@ -13,7 +13,7 @@ export const MockObject = `
 
 export const Query = `
   type Query {
-    Mock: MockObject
+    Mock(seed: Int): MockObject
   }
 `
 
