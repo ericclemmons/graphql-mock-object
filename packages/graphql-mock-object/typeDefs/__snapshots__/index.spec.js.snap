@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typeDefs MockObject __type should match snapshot 1`] = `
+Object {
+  "MockObject": Object {
+    "fields": Array [
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "Boolean",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "Float",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [
+          Object {
+            "defaultValue": null,
+            "description": "",
+            "name": "value",
+          },
+        ],
+        "description": "",
+        "name": "ID",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "Int",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [
+          Object {
+            "defaultValue": "0",
+            "description": "",
+            "name": "length",
+          },
+        ],
+        "description": "",
+        "name": "List",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "Mock",
+        "type": Object {
+          "name": "MockObject",
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "Null",
+        "type": Object {
+          "name": "String",
+        },
+      },
+      Object {
+        "args": Array [
+          Object {
+            "defaultValue": null,
+            "description": "",
+            "name": "value",
+          },
+        ],
+        "description": "",
+        "name": "String",
+        "type": Object {
+          "name": null,
+        },
+      },
+    ],
+    "inputFields": null,
+  },
+}
+`;
+
+exports[`typeDefs Query __type should match snapshot 1`] = `
+Object {
+  "Query": Object {
+    "fields": Array [
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "Mock",
+        "type": Object {
+          "name": "MockObject",
+        },
+      },
+    ],
+  },
+}
+`;
