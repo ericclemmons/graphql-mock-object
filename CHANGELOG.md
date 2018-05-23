@@ -1,12 +1,20 @@
-## 1.0.0 (2018-5-20)
-
 # Change Log
 All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2018-05-20 - [3.1.0 - current version]
+## 2018-05-22 - [3.2.0 - current version]
 
+- 3.2.0 - ([4](https://github.com/ericclemmons/graphql-mock-object/pull/4)) - Add "seed" to Mock (@ericclemmons)
+- 3.1.6 - ([1734308](https://github.com/ericclemmons/graphql-mock-object/commit/1734308d7c4d0fd3a2bfe5ead4a6d83867c4a797)) - Add jest tests (@ericclemmons)
+- 3.1.5 - ([989de4e](https://github.com/ericclemmons/graphql-mock-object/commit/989de4e42da1a7490da56d3bac9013bcbe008754)) - Upgrade dependencies (@ericclemmons)
+
+## 2018-05-20
+
+- 3.1.4 - ([6faaf84](https://github.com/ericclemmons/graphql-mock-object/commit/6faaf8433252640613cb6f8ec3e95ec355e0e2ba)) - Revert "Merge pull request #6 from ericclemmons/6-graphql-yoga"  This reverts commit 812554ff5e25434bcd51441a95f07a109a3af2bc, reversing changes made to 88bfa8bab36c19f5b24c0e89698a2b5c146cd679. (@ericclemmons)
+- 3.1.3 - ([53da9e3](https://github.com/ericclemmons/graphql-mock-object/commit/53da9e30b435371512839e18e7827fdf251e8465)) - Add "yarn dev" (@ericclemmons)
+- 3.1.2 - ([57a9847](https://github.com/ericclemmons/graphql-mock-object/commit/57a98473ae2d8270537c41d4df3628b86b075cd3)) - 3.1.0 (@ericclemmons)
+- 3.1.1 - ([733b244](https://github.com/ericclemmons/graphql-mock-object/commit/733b2449804ae0d4914982a24df800c5411f540f)) - 3.1.0 (@ericclemmons)
 - 3.1.0 - ([6](https://github.com/ericclemmons/graphql-mock-object/pull/6)) - Add graphql-yoga example (@ericclemmons)
 - 3.0.1 - ([88bfa8b](https://github.com/ericclemmons/graphql-mock-object/commit/88bfa8bab36c19f5b24c0e89698a2b5c146cd679)) - 3.0.0 (@ericclemmons)
 - 3.0.0 - ([3](https://github.com/ericclemmons/graphql-mock-object/pull/3)) - Simplify usage (@ericclemmons)
