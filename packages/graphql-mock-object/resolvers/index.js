@@ -1,4 +1,4 @@
-import { fake, seed } from "faker"
+import faker from "faker"
 
 import { version } from "../package.json"
 
@@ -8,41 +8,47 @@ const majorVersion = parseInt(version.match(/\d+/g).shift(), 10) || 1
 
 // The resolvers
 export const MockObject = {
-  Boolean() {
-    return true
+  Boolean(parent, args) {
+    const { value = "{{random.boolean}}" } = args
+
+    return faker.fake(value)
   },
-  Float() {
-    return 0.1
+  Float(parent, args) {
+    const { value = "0.{{random.number}}" } = args
+
+    return faker.fake(value)
   },
   ID(parent, args) {
-    const { value } = args
+    const { value = "{{random.number}}" } = args
 
-    return fake(value)
+    return faker.fake(value)
   },
-  Int() {
-    return 1
+  Int(parent, args) {
+    const { value = "{{random.number}}" } = args
+
+    return faker.fake(value)
   },
   List(parent, args) {
     const { length } = args
 
     return Array.from({ length }).map(() => ({}))
   },
-  Mock() {
-    seed(majorVersion)
+  Mock(parent, args) {
+    const { seed = majorVersion } = args
+
+    faker.seed(seed)
 
     return {}
   },
   String(parent, args) {
-    const { value } = args
+    const { value = "{{lorem.sentence}}" } = args
 
-    return fake(value)
+    return faker.fake(value)
   },
 }
 
 export const Query = {
-  Mock() {
-    return {}
-  },
+  Mock: MockObject.Mock,
 }
 
 export const resolvers = {
