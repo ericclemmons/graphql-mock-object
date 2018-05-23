@@ -20,7 +20,7 @@ describe("typeDefs", () => {
         schema,
       })
 
-      expect(errors).toBe(undefined)
+      expect(errors).toBeUndefined()
       expect(data).toMatchSnapshot()
     })
   })
@@ -42,8 +42,36 @@ describe("typeDefs", () => {
         schema,
       })
 
-      expect(errors).toBe(undefined)
+      expect(errors).toBeUndefined()
       expect(data).toMatchSnapshot()
+    })
+
+    it("should return consistent, random values", async () => {
+      const query = `{
+        Mock {
+          Boolean
+          Float
+          ID
+          Int
+          List(length: 2) {
+            ID
+          }
+          Mock {
+            ID
+          }
+          Null
+          String
+        }
+      }`
+
+      const { data, errors } = await runQuery({ query, schema })
+
+      expect(errors).toBeUndefined()
+      expect(data).toMatchSnapshot()
+
+      const duplicate = await runQuery({ query, schema })
+
+      expect(duplicate.data).toEqual(data)
     })
   })
 })

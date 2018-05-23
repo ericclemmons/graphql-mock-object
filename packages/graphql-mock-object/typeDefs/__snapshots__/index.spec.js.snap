@@ -57,7 +57,13 @@ Object {
         },
       },
       Object {
-        "args": Array [],
+        "args": Array [
+          Object {
+            "defaultValue": null,
+            "description": "",
+            "name": "seed",
+          },
+        ],
         "description": "",
         "name": "Mock",
         "type": Object {
@@ -92,12 +98,42 @@ Object {
 }
 `;
 
+exports[`typeDefs MockObject should return consistent, random values 1`] = `
+Object {
+  "Mock": Object {
+    "Boolean": true,
+    "Float": 0.7072,
+    "ID": "70814",
+    "Int": 83994,
+    "List": Array [
+      Object {
+        "ID": "29090",
+      },
+      Object {
+        "ID": "12132",
+      },
+    ],
+    "Mock": Object {
+      "ID": "55079",
+    },
+    "Null": null,
+    "String": "Impedit voluptas nostrum.",
+  },
+}
+`;
+
 exports[`typeDefs Query __type should match snapshot 1`] = `
 Object {
   "Query": Object {
     "fields": Array [
       Object {
-        "args": Array [],
+        "args": Array [
+          Object {
+            "defaultValue": null,
+            "description": "",
+            "name": "seed",
+          },
+        ],
         "description": "",
         "name": "Mock",
         "type": Object {
