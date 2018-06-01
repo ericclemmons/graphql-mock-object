@@ -221,6 +221,19 @@ describe("typeDefs", () => {
             word
             words
           }
+
+          name {
+            findName
+            firstName
+            jobArea
+            jobDescriptor
+            jobTitle
+            jobType
+            lastName
+            prefix
+            suffix
+            title
+          }
         }
       }`
 

@@ -188,6 +188,19 @@ export const MockLorem = {
   words: fakerResolver("{{lorem.words}}"),
 }
 
+export const MockName = {
+  findName: fakerResolver("{{name.findName}}"),
+  firstName: fakerResolver("{{name.firstName}}"),
+  jobArea: fakerResolver("{{name.jobArea}}"),
+  jobDescriptor: fakerResolver("{{name.jobDescriptor}}"),
+  jobTitle: fakerResolver("{{name.jobTitle}}"),
+  jobType: fakerResolver("{{name.jobType}}"),
+  lastName: fakerResolver("{{name.lastName}}"),
+  prefix: fakerResolver("{{name.prefix}}"),
+  suffix: fakerResolver("{{name.suffix}}"),
+  title: fakerResolver("{{name.title}}"),
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -215,6 +228,7 @@ export const MockObject = {
 
     return {}
   },
+  name: () => ({}),
   String: fakerResolver("{{lorem.sentence}}"),
 }
 
@@ -233,6 +247,7 @@ export const resolvers = {
   MockImage,
   MockInternet,
   MockLorem,
+  MockName,
   MockObject,
   Query,
 }

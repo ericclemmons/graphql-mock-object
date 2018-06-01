@@ -153,6 +153,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "name",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Null",
         "type": Object {
           "name": "String",
@@ -334,6 +342,18 @@ Ea rerum rerum. Nemo quasi veniam beatae numquam ut. Architecto consequuntur sit
       "text": "Provident ratione dolor cumque assumenda.",
       "word": "similique",
       "words": "accusantium laborum et",
+    },
+    "name": Object {
+      "findName": "Mr. Haylee McCullough",
+      "firstName": "Barney",
+      "jobArea": "Functionality",
+      "jobDescriptor": "Global",
+      "jobTitle": "International Data Associate",
+      "jobType": "Associate",
+      "lastName": "Greenholt",
+      "prefix": "Dr.",
+      "suffix": "DVM",
+      "title": "International Usability Liaison",
     },
   },
 }

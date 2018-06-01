@@ -149,6 +149,21 @@ export const MockLorem = `
   }
 `
 
+export const MockName = `
+  type MockName {
+    findName: String!
+    firstName: String!
+    jobArea: String!
+    jobDescriptor: String!
+    jobTitle: String!
+    jobType: String!
+    lastName: String!
+    prefix: String!
+    suffix: String!
+    title: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -167,6 +182,7 @@ export const MockObject = `
     List(length: Int = 0): [MockObject]!
     lorem: MockLorem!
     Mock(seed: Int): MockObject!
+    name: MockName!
     Null: String
     String(value: String): String!
   }
@@ -189,6 +205,7 @@ export const typeDefs = [
   MockImage,
   MockInternet,
   MockLorem,
+  MockName,
   MockObject,
   Query,
 ]
