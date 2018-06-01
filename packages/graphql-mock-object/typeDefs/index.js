@@ -66,6 +66,22 @@ export const MockDate = `
   }
 `
 
+export const MockFinance = `
+  type MockFinance {
+    account: Int!
+    accountName: String!
+    amount: Float!
+    bic: String!
+    bitcoinAddress: String!
+    currencyCode: String!
+    currencyName: String!
+    currencySymbol: String!
+    iban: String!
+    mask: String!
+    transactionType: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -73,7 +89,8 @@ export const MockObject = `
     commerce: MockCommerce!
     company: MockCompany!
     database: MockDatabase!
-    date: MockDate
+    date: MockDate!
+    finance: MockFinance!
     Float: Float!
     ID(value: String): ID!
     Int: Int!
@@ -96,6 +113,7 @@ export const typeDefs = [
   MockCompany,
   MockDatabase,
   MockDate,
+  MockFinance,
   MockObject,
   Query,
 ]

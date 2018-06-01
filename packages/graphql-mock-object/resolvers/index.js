@@ -81,6 +81,20 @@ export const MockDate = {
   weekday: fakerResolver("{{date.weekday}}"),
 }
 
+export const MockFinance = {
+  account: fakerResolver("{{finance.account}}"),
+  accountName: fakerResolver("{{finance.accountName}}"),
+  amount: fakerResolver("{{finance.amount}}"),
+  bic: fakerResolver("{{finance.bic}}"),
+  bitcoinAddress: fakerResolver("{{finance.bitcoinAddress}}"),
+  currencyCode: fakerResolver("{{finance.currencyCode}}"),
+  currencyName: fakerResolver("{{finance.currencyName}}"),
+  currencySymbol: fakerResolver("{{finance.currencySymbol}}"),
+  iban: fakerResolver("{{finance.iban}}"),
+  mask: fakerResolver("{{finance.mask}}"),
+  transactionType: fakerResolver("{{finance.transactionType}}"),
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -88,6 +102,7 @@ export const MockObject = {
   company: () => ({}),
   database: () => ({}),
   date: () => ({}),
+  finance: () => ({}),
   Float: fakerResolver("0.{{random.number}}"),
   ID: fakerResolver("{{random.number}}"),
   Int: fakerResolver("{{random.number}}"),
@@ -116,6 +131,7 @@ export const resolvers = {
   MockCompany,
   MockDatabase,
   MockDate,
+  MockFinance,
   MockObject,
   Query,
 }

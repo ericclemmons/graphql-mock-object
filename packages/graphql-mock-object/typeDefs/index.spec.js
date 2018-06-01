@@ -147,6 +147,20 @@ describe("typeDefs", () => {
             recent
             weekday
           }
+
+          finance {
+            account
+            accountName
+            amount
+            bic
+            bitcoinAddress
+            currencyCode
+            currencyName
+            currencySymbol
+            iban
+            mask
+            transactionType
+          }
         }
       }`
 

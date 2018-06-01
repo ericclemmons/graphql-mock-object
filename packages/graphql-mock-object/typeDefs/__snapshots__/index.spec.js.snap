@@ -49,7 +49,15 @@ Object {
         "description": "",
         "name": "date",
         "type": Object {
-          "name": "MockDate",
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "finance",
+        "type": Object {
+          "name": null,
         },
       },
       Object {
@@ -222,6 +230,19 @@ Object {
       "past": "Wed May 30 2018 16:03:32 GMT-0700 (PDT)",
       "recent": "Wed May 30 2018 06:59:12 GMT-0700 (PDT)",
       "weekday": "Tuesday",
+    },
+    "finance": Object {
+      "account": 4675730,
+      "accountName": "Savings Account",
+      "amount": 315.77,
+      "bic": "OMTEMQH1",
+      "bitcoinAddress": "1NUNLVATADG27R72IU3OHGDDPIQG",
+      "currencyCode": "SAR",
+      "currencyName": "Trinidad and Tobago Dollar",
+      "currencySymbol": "﷼",
+      "iban": "DE30845851030092005075",
+      "mask": "4952",
+      "transactionType": "deposit",
     },
   },
 }
