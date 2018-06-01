@@ -7,6 +7,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "address",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Boolean",
         "type": Object {
           "name": null,
@@ -15,7 +23,55 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "commerce",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "company",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "database",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "date",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "finance",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Float",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "hacker",
         "type": Object {
           "name": null,
         },
@@ -37,7 +93,23 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "image",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Int",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "internet",
         "type": Object {
           "name": null,
         },
@@ -57,6 +129,14 @@ Object {
         },
       },
       Object {
+        "args": Array [],
+        "description": "",
+        "name": "lorem",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
         "args": Array [
           Object {
             "defaultValue": null,
@@ -67,7 +147,15 @@ Object {
         "description": "",
         "name": "Mock",
         "type": Object {
-          "name": "MockObject",
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "name",
+        "type": Object {
+          "name": null,
         },
       },
       Object {
@@ -76,6 +164,22 @@ Object {
         "name": "Null",
         "type": Object {
           "name": "String",
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "phone",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "random",
+        "type": Object {
+          "name": null,
         },
       },
       Object {
@@ -88,6 +192,14 @@ Object {
         ],
         "description": "",
         "name": "String",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "system",
         "type": Object {
           "name": null,
         },
@@ -118,6 +230,182 @@ Object {
     },
     "Null": null,
     "String": "Impedit voluptas nostrum.",
+  },
+}
+`;
+
+exports[`typeDefs MockObject should support faker.js 1`] = `
+Object {
+  "Mock": Object {
+    "address": Object {
+      "city": "Antonechester",
+      "cityPrefix": "Lake",
+      "country": "Finland",
+      "countryCode": "BQ",
+      "county": "Borders",
+      "latitude": 12.476,
+      "longitude": 141.4609,
+      "secondaryAddress": "Apt. 801",
+      "state": "Arizona",
+      "stateAbbr": "HI",
+      "streetAddress": "00460 Klein Crossroad",
+      "streetName": "Gottlieb Ports",
+      "streetPrefix": "b",
+      "streetSuffix": "Ranch",
+      "zipCode": "59075",
+    },
+    "commerce": Object {
+      "color": "silver",
+      "department": "Computers",
+      "price": 402,
+      "product": "Shirt",
+      "productAdjective": "Awesome",
+      "productMaterial": "Plastic",
+      "productName": "Incredible Metal Soap",
+    },
+    "company": Object {
+      "bs": "magnetic morph platforms",
+      "bsAdjective": "bleeding-edge",
+      "bsBuzz": "deliver",
+      "bsNoun": "deliverables",
+      "catchPhrase": "Front-line demand-driven contingency",
+      "catchPhraseAdjective": "Seamless",
+      "catchPhraseDescriptor": "secondary",
+      "catchPhraseNoun": "success",
+      "companyName": "Raynor - Weber",
+      "companySuffix": "Inc",
+      "suffixes": Array [
+        "Inc",
+        "and Sons",
+        "LLC",
+        "Group",
+      ],
+    },
+    "database": Object {
+      "collation": "cp1250_general_ci",
+      "column": "title",
+      "engine": "BLACKHOLE",
+      "type": "timestamp",
+    },
+    "date": Object {
+      "between": "Mon Jan 01 2018 00:00:00 GMT-0800 (PST)",
+      "future": "Tue Oct 23 2018 07:13:11 GMT-0700 (PDT)",
+      "month": "November",
+      "past": "Wed May 30 2018 16:03:32 GMT-0700 (PDT)",
+      "recent": "Wed May 30 2018 06:59:12 GMT-0700 (PDT)",
+      "weekday": "Tuesday",
+    },
+    "finance": Object {
+      "account": 4675730,
+      "accountName": "Savings Account",
+      "amount": 315.77,
+      "bic": "OMTEMQH1",
+      "bitcoinAddress": "1NUNLVATADG27R72IU3OHGDDPIQG",
+      "currencyCode": "SAR",
+      "currencyName": "Trinidad and Tobago Dollar",
+      "currencySymbol": "﷼",
+      "iban": "DE30845851030092005075",
+      "mask": "4952",
+      "transactionType": "deposit",
+    },
+    "hacker": Object {
+      "abbreviation": "JSON",
+      "adjective": "primary",
+      "ingverb": "compressing",
+      "noun": "microchip",
+      "phrase": "We need to synthesize the mobile GB bandwidth!",
+      "verb": "hack",
+    },
+    "image": Object {
+      "abstract": "http://lorempixel.com/640/480/abstract",
+      "animals": "http://lorempixel.com/640/480/animals",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/juanmamartinez/128.jpg",
+      "business": "http://lorempixel.com/640/480/business",
+      "cats": "http://lorempixel.com/640/480/cats",
+      "city": "http://lorempixel.com/640/480/city",
+      "dataUri": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22undefined%22%20height%3D%22undefined%22%3E%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%20%20%3Ctext%20x%3D%220%22%20y%3D%2220%22%20font-size%3D%2220%22%20text-anchor%3D%22start%22%20fill%3D%22white%22%3Eundefinedxundefined%3C%2Ftext%3E%20%3C%2Fsvg%3E",
+      "fashion": "http://lorempixel.com/640/480/fashion",
+      "food": "http://lorempixel.com/640/480/food",
+      "image": "http://lorempixel.com/640/480/fashion",
+      "imageUrl": "http://lorempixel.com/640/480",
+      "nature": "http://lorempixel.com/640/480/nature",
+      "nightlife": "http://lorempixel.com/640/480/nightlife",
+      "people": "http://lorempixel.com/640/480/people",
+      "sports": "http://lorempixel.com/640/480/sports",
+      "technics": "http://lorempixel.com/640/480/technics",
+      "transport": "http://lorempixel.com/640/480/transport",
+    },
+    "internet": Object {
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/sgaurav_baghel/128.jpg",
+      "color": "#180b7a",
+      "domainName": "malvina.net",
+      "domainSuffix": "biz",
+      "domainWord": "kamryn",
+      "email": "Melany42@yahoo.com",
+      "exampleEmail": "Reese_Smitham@example.net",
+      "ip": "225.122.204.215",
+      "ipv6": "5bca:eeca:45e8:83d3:3b3c:ffcd:3871:872e",
+      "mac": "4c:47:e7:83:92:51",
+      "password": "ZuH94f8vNpBJTOr",
+      "protocol": "https",
+      "url": "http://kamryn.net",
+      "userName": "Rodolfo99",
+    },
+    "lorem": Object {
+      "lines": "Eligendi rem saepe impedit.
+Laboriosam et optio et placeat.",
+      "paragraph": "Quod pariatur nesciunt vitae optio nemo voluptas natus qui. Ea explicabo est voluptate eos ut ipsam est quam enim. Voluptas sequi dolores aut nihil quibusdam soluta ut fuga consequatur. Quia nesciunt labore qui eum corporis delectus odit cumque quis.",
+      "paragraphs": "Quis labore fugiat optio officiis accusantium sunt non. Commodi fugiat et pariatur. Ipsam id minima incidunt et dignissimos ut facilis. Dolor quo autem.
+ 
+Est voluptate incidunt odit delectus odio. At nisi ut hic quisquam cumque velit voluptas eos. Voluptatem illo modi. Ex corporis dolor sint ducimus sequi voluptatum reiciendis. Quas consequatur eum voluptatem architecto et deleniti.
+ 
+Ea rerum rerum. Nemo quasi veniam beatae numquam ut. Architecto consequuntur sit asperiores iusto et. Et qui reiciendis dolorum exercitationem quis. Dolorum in nesciunt temporibus ad et. Deserunt sequi consequuntur modi doloremque et incidunt deleniti perferendis.",
+      "sentence": "Ad doloremque earum.",
+      "sentences": "Neque architecto soluta ad quibusdam. In nihil eligendi qui reprehenderit et quae sit odio maxime. Consequatur mollitia omnis dolores autem. Harum vel omnis voluptatem.",
+      "slug": "quidem-velit-expedita",
+      "text": "Provident ratione dolor cumque assumenda.",
+      "word": "similique",
+      "words": "accusantium laborum et",
+    },
+    "name": Object {
+      "findName": "Mr. Haylee McCullough",
+      "firstName": "Barney",
+      "jobArea": "Functionality",
+      "jobDescriptor": "Global",
+      "jobTitle": "International Data Associate",
+      "jobType": "Associate",
+      "lastName": "Greenholt",
+      "prefix": "Dr.",
+      "suffix": "DVM",
+      "title": "International Usability Liaison",
+    },
+    "phone": Object {
+      "phoneFormats": "(###) ###-#### x###",
+      "phoneNumber": "1-786-649-8318 x840",
+      "phoneNumberFormat": "887-614-7684",
+    },
+    "random": Object {
+      "alphaNumeric": "m",
+      "arrayElement": "c",
+      "boolean": false,
+      "image": "http://lorempixel.com/640/480/animals",
+      "locale": "en_BORK",
+      "number": 50815,
+      "objectElement": "car",
+      "uuid": "d0e03d4d-e052-40ab-a6bb-c71866e4ce3a",
+      "word": "Seamless",
+      "words": "Legacy Inverse Principal",
+    },
+    "system": Object {
+      "commonFileExt": "m2v",
+      "commonFileName": "awesome_granite_computer_png.gif",
+      "commonFileType": "application",
+      "fileExt": "hvp",
+      "fileName": "fresh_generic_rubber_cheese.sxm",
+      "fileType": "application",
+      "mimeType": "application/x-gca-compressed",
+      "semver": "2.7.6",
+    },
   },
 }
 `;
