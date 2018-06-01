@@ -176,6 +176,18 @@ export const MockInternet = {
   userName: fakerResolver("{{internet.userName}}"),
 }
 
+export const MockLorem = {
+  lines: fakerResolver("{{lorem.lines}}"),
+  paragraph: fakerResolver("{{lorem.paragraph}}"),
+  paragraphs: fakerResolver("{{lorem.paragraphs}}"),
+  sentence: fakerResolver("{{lorem.sentence}}"),
+  sentences: fakerResolver("{{lorem.sentences}}"),
+  slug: fakerResolver("{{lorem.slug}}"),
+  text: fakerResolver("{{lorem.text}}"),
+  word: fakerResolver("{{lorem.word}}"),
+  words: fakerResolver("{{lorem.words}}"),
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -195,6 +207,7 @@ export const MockObject = {
 
     return Array.from({ length }).map(() => ({}))
   },
+  lorem: () => ({}),
   Mock(parent, args) {
     const { seed = majorVersion } = args
 
@@ -219,6 +232,7 @@ export const resolvers = {
   MockHacker,
   MockImage,
   MockInternet,
+  MockLorem,
   MockObject,
   Query,
 }

@@ -209,6 +209,18 @@ describe("typeDefs", () => {
             # userAgent
             userName
           }
+
+          lorem {
+            lines
+            paragraph
+            paragraphs
+            sentence
+            sentences
+            slug
+            text
+            word
+            words
+          }
         }
       }`
 

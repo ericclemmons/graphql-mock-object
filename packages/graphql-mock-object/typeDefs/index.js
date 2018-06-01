@@ -135,6 +135,20 @@ export const MockInternet = `
   }
 `
 
+export const MockLorem = `
+  type MockLorem {
+    lines: String!
+    paragraph: String!
+    paragraphs: String!
+    sentence: String!
+    sentences: String!
+    slug: String!
+    text: String!
+    word: String!
+    words: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -151,6 +165,7 @@ export const MockObject = `
     Int: Int!
     internet: MockInternet!
     List(length: Int = 0): [MockObject]!
+    lorem: MockLorem!
     Mock(seed: Int): MockObject!
     Null: String
     String(value: String): String!
@@ -173,6 +188,7 @@ export const typeDefs = [
   MockHacker,
   MockImage,
   MockInternet,
+  MockLorem,
   MockObject,
   Query,
 ]

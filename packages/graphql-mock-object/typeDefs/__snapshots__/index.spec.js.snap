@@ -129,6 +129,14 @@ Object {
         },
       },
       Object {
+        "args": Array [],
+        "description": "",
+        "name": "lorem",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
         "args": Array [
           Object {
             "defaultValue": null,
@@ -309,8 +317,23 @@ Object {
       "password": "ZuH94f8vNpBJTOr",
       "protocol": "https",
       "url": "http://kamryn.net",
-      "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 6.3) AppleWebKit/538.0.0 (KHTML, like Gecko) Chrome/29.0.817.0 Safari/538.0.0",
       "userName": "Rodolfo99",
+    },
+    "lorem": Object {
+      "lines": "Eligendi rem saepe impedit.
+Laboriosam et optio et placeat.",
+      "paragraph": "Quod pariatur nesciunt vitae optio nemo voluptas natus qui. Ea explicabo est voluptate eos ut ipsam est quam enim. Voluptas sequi dolores aut nihil quibusdam soluta ut fuga consequatur. Quia nesciunt labore qui eum corporis delectus odit cumque quis.",
+      "paragraphs": "Quis labore fugiat optio officiis accusantium sunt non. Commodi fugiat et pariatur. Ipsam id minima incidunt et dignissimos ut facilis. Dolor quo autem.
+ 
+Est voluptate incidunt odit delectus odio. At nisi ut hic quisquam cumque velit voluptas eos. Voluptatem illo modi. Ex corporis dolor sint ducimus sequi voluptatum reiciendis. Quas consequatur eum voluptatem architecto et deleniti.
+ 
+Ea rerum rerum. Nemo quasi veniam beatae numquam ut. Architecto consequuntur sit asperiores iusto et. Et qui reiciendis dolorum exercitationem quis. Dolorum in nesciunt temporibus ad et. Deserunt sequi consequuntur modi doloremque et incidunt deleniti perferendis.",
+      "sentence": "Ad doloremque earum.",
+      "sentences": "Neque architecto soluta ad quibusdam. In nihil eligendi qui reprehenderit et quae sit odio maxime. Consequatur mollitia omnis dolores autem. Harum vel omnis voluptatem.",
+      "slug": "quidem-velit-expedita",
+      "text": "Provident ratione dolor cumque assumenda.",
+      "word": "similique",
+      "words": "accusantium laborum et",
     },
   },
 }
