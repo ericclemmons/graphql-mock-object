@@ -41,11 +41,30 @@ export const MockCommerce = {
   productMaterial: fakerResolver("{{commerce.productMaterial}}"),
 }
 
+export const MockCompany = {
+  bs: fakerResolver("{{company.bs}}"),
+  bsAdjective: fakerResolver("{{company.bsAdjective}}"),
+  bsBuzz: fakerResolver("{{company.bsBuzz}}"),
+  bsNoun: fakerResolver("{{company.bsNoun}}"),
+  catchPhraseAdjective: fakerResolver("{{company.catchPhraseAdjective}}"),
+  catchPhraseDescriptor: fakerResolver("{{company.catchPhraseDescriptor}}"),
+  catchPhrase: fakerResolver("{{company.catchPhrase}}"),
+  catchPhraseNoun: fakerResolver("{{company.catchPhraseNoun}}"),
+  companyName: fakerResolver("{{company.companyName}}"),
+  companySuffix: fakerResolver("{{company.companySuffix}}"),
+  suffixes(parent, args) {
+    return faker.company.suffixes()
+  },
+}
+
 export const MockObject = {
   address(parent, args) {
     return {}
   },
   commerce(parent, args) {
+    return {}
+  },
+  company(parent, args) {
     return {}
   },
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -74,6 +93,7 @@ export const Query = {
 export const resolvers = {
   MockAddress,
   MockCommerce,
+  MockCompany,
   MockObject,
   Query,
 }

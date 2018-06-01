@@ -104,6 +104,20 @@ describe("typeDefs", () => {
             productMaterial
             productName
           }
+
+          company {
+            bs
+            bsAdjective
+            bsBuzz
+            bsNoun
+            catchPhraseAdjective
+            catchPhraseDescriptor
+            catchPhrase
+            catchPhraseNoun
+            companyName
+            companySuffix
+            suffixes
+          }
         }
       }`
 

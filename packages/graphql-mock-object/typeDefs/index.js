@@ -29,10 +29,28 @@ export const MockCommerce = `
     productMaterial: String!
   }
 `
+
+export const MockCompany = `
+  type MockCompany {
+    bs: String!
+    bsAdjective: String!
+    bsBuzz: String!
+    bsNoun: String!
+    catchPhraseAdjective: String!
+    catchPhraseDescriptor: String!
+    catchPhrase: String!
+    catchPhraseNoun: String!
+    companyName: String!
+    companySuffix: String!
+    suffixes: [String!]!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
     commerce: MockCommerce!
+    company: MockCompany!
     Boolean: Boolean!
     Float: Float!
     ID(value: String): ID!
@@ -50,4 +68,10 @@ export const Query = `
   }
 `
 
-export const typeDefs = [MockAddress, MockCommerce, MockObject, Query]
+export const typeDefs = [
+  MockAddress,
+  MockCommerce,
+  MockCompany,
+  MockObject,
+  Query,
+]

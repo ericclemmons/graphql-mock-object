@@ -23,6 +23,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "company",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Boolean",
         "type": Object {
           "name": null,
@@ -164,8 +172,26 @@ Object {
       "price": 402,
       "product": "Shirt",
       "productAdjective": "Awesome",
-      "productMaterial": "Rubber",
-      "productName": "Gorgeous Plastic Chicken",
+      "productMaterial": "Plastic",
+      "productName": "Incredible Metal Soap",
+    },
+    "company": Object {
+      "bs": "magnetic morph platforms",
+      "bsAdjective": "bleeding-edge",
+      "bsBuzz": "deliver",
+      "bsNoun": "deliverables",
+      "catchPhrase": "Front-line demand-driven contingency",
+      "catchPhraseAdjective": "Seamless",
+      "catchPhraseDescriptor": "secondary",
+      "catchPhraseNoun": "success",
+      "companyName": "Raynor - Weber",
+      "companySuffix": "Inc",
+      "suffixes": Array [
+        "Inc",
+        "and Sons",
+        "LLC",
+        "Group",
+      ],
     },
   },
 }
