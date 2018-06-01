@@ -6,12 +6,6 @@ import { version } from "../package.json"
 // version change will yield different resultsl
 const majorVersion = parseInt(version.match(/\d+/g).shift(), 10) || 1
 
-const fakerResolver = (template) => (parent, args) => {
-  const { value = template } = args
-
-  return faker.fake(value)
-}
-
 // The resolvers
 export const MockAddress = {
   city: () => faker.address.city(),
@@ -209,11 +203,23 @@ export const MockObject = {
   database: () => ({}),
   date: () => ({}),
   finance: () => ({}),
-  Float: fakerResolver("0.{{random.number}}"),
+  Float(parent, args) {
+    const { template = "0.{{random.number}}" } = args
+
+    return faker.fake(template)
+  },
   hacker: () => ({}),
-  ID: fakerResolver("{{random.number}}"),
+  ID(parent, args) {
+    const { template = "{{random.number}}" } = args
+
+    return faker.fake(template)
+  },
   image: () => ({}),
-  Int: fakerResolver("{{random.number}}"),
+  Int(parent, args) {
+    const { template = "{{random.number}}" } = args
+
+    return faker.fake(template)
+  },
   internet: () => ({}),
   List(parent, args) {
     const { length } = args
@@ -230,7 +236,11 @@ export const MockObject = {
   },
   name: () => ({}),
   phone: () => ({}),
-  String: fakerResolver("{{lorem.sentence}}"),
+  String(parent, args) {
+    const { template = "{{lorem.sentence}}" } = args
+
+    return faker.fake(template)
+  },
   random: () => ({}),
 }
 
