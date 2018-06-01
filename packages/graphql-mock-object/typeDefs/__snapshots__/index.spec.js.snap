@@ -107,6 +107,14 @@ Object {
         },
       },
       Object {
+        "args": Array [],
+        "description": "",
+        "name": "internet",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
         "args": Array [
           Object {
             "defaultValue": "0",
@@ -286,6 +294,23 @@ Object {
       "sports": "http://lorempixel.com/640/480/sports",
       "technics": "http://lorempixel.com/640/480/technics",
       "transport": "http://lorempixel.com/640/480/transport",
+    },
+    "internet": Object {
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/sgaurav_baghel/128.jpg",
+      "color": "#180b7a",
+      "domainName": "malvina.net",
+      "domainSuffix": "biz",
+      "domainWord": "kamryn",
+      "email": "Melany42@yahoo.com",
+      "exampleEmail": "Reese_Smitham@example.net",
+      "ip": "225.122.204.215",
+      "ipv6": "5bca:eeca:45e8:83d3:3b3c:ffcd:3871:872e",
+      "mac": "4c:47:e7:83:92:51",
+      "password": "ZuH94f8vNpBJTOr",
+      "protocol": "https",
+      "url": "http://kamryn.net",
+      "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 6.3) AppleWebKit/538.0.0 (KHTML, like Gecko) Chrome/29.0.817.0 Safari/538.0.0",
+      "userName": "Rodolfo99",
     },
   },
 }

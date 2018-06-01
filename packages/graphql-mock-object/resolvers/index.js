@@ -158,6 +158,24 @@ export const MockImage = {
   },
 }
 
+export const MockInternet = {
+  avatar: fakerResolver("{{internet.avatar}}"),
+  color: fakerResolver("{{internet.color}}"),
+  domainName: fakerResolver("{{internet.domainName}}"),
+  domainSuffix: fakerResolver("{{internet.domainSuffix}}"),
+  domainWord: fakerResolver("{{internet.domainWord}}"),
+  email: fakerResolver("{{internet.email}}"),
+  exampleEmail: fakerResolver("{{internet.exampleEmail}}"),
+  ip: fakerResolver("{{internet.ip}}"),
+  ipv6: fakerResolver("{{internet.ipv6}}"),
+  mac: fakerResolver("{{internet.mac}}"),
+  password: fakerResolver("{{internet.password}}"),
+  protocol: fakerResolver("{{internet.protocol}}"),
+  url: fakerResolver("{{internet.url}}"),
+  userAgent: fakerResolver("{{internet.userAgent}}"),
+  userName: fakerResolver("{{internet.userName}}"),
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -171,6 +189,7 @@ export const MockObject = {
   ID: fakerResolver("{{random.number}}"),
   image: () => ({}),
   Int: fakerResolver("{{random.number}}"),
+  internet: () => ({}),
   List(parent, args) {
     const { length } = args
 
@@ -199,6 +218,7 @@ export const resolvers = {
   MockFinance,
   MockHacker,
   MockImage,
+  MockInternet,
   MockObject,
   Query,
 }

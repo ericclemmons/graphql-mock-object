@@ -190,6 +190,24 @@ describe("typeDefs", () => {
             technics
             transport
           }
+
+          internet {
+            avatar
+            color
+            domainName
+            domainSuffix
+            domainWord
+            email
+            exampleEmail
+            ip
+            ipv6
+            mac
+            password
+            protocol
+            url
+            userAgent
+            userName
+          }
         }
       }`
 

@@ -115,6 +115,26 @@ export const MockImage = `
   }
 `
 
+export const MockInternet = `
+  type MockInternet {
+    avatar: String!
+    color: String!
+    domainName: String!
+    domainSuffix: String!
+    domainWord: String!
+    email: String!
+    exampleEmail: String!
+    ip: String!
+    ipv6: String!
+    mac: String!
+    password: String!
+    protocol: String!
+    url: String!
+    userAgent: String!
+    userName: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -129,6 +149,7 @@ export const MockObject = `
     ID(value: String): ID!
     image: MockImage!
     Int: Int!
+    internet: MockInternet!
     List(length: Int = 0): [MockObject]!
     Mock(seed: Int): MockObject!
     Null: String
@@ -151,6 +172,7 @@ export const typeDefs = [
   MockFinance,
   MockHacker,
   MockImage,
+  MockInternet,
   MockObject,
   Query,
 ]
