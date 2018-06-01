@@ -46,12 +46,22 @@ export const MockCompany = `
   }
 `
 
+export const MockDatabase = `
+  type MockDatabase {
+    collation: String!
+    column: String!
+    engine: String!
+    type: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
+    Boolean: Boolean!
     commerce: MockCommerce!
     company: MockCompany!
-    Boolean: Boolean!
+    database: MockDatabase!
     Float: Float!
     ID(value: String): ID!
     Int: Int!
@@ -72,6 +82,7 @@ export const typeDefs = [
   MockAddress,
   MockCommerce,
   MockCompany,
+  MockDatabase,
   MockObject,
   Query,
 ]

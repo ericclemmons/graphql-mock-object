@@ -57,17 +57,19 @@ export const MockCompany = {
   },
 }
 
+export const MockDatabase = {
+  collation: fakerResolver("{{database.collation}}"),
+  column: fakerResolver("{{database.column}}"),
+  engine: fakerResolver("{{database.engine}}"),
+  type: fakerResolver("{{database.type}}"),
+}
+
 export const MockObject = {
-  address(parent, args) {
-    return {}
-  },
-  commerce(parent, args) {
-    return {}
-  },
-  company(parent, args) {
-    return {}
-  },
+  address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
+  commerce: () => ({}),
+  company: () => ({}),
+  database: () => ({}),
   Float: fakerResolver("0.{{random.number}}"),
   ID: fakerResolver("{{random.number}}"),
   Int: fakerResolver("{{random.number}}"),
@@ -94,6 +96,7 @@ export const resolvers = {
   MockAddress,
   MockCommerce,
   MockCompany,
+  MockDatabase,
   MockObject,
   Query,
 }

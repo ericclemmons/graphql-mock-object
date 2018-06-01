@@ -118,6 +118,13 @@ describe("typeDefs", () => {
             companySuffix
             suffixes
           }
+
+          database {
+            collation
+            column
+            engine
+            type
+          }
         }
       }`
 

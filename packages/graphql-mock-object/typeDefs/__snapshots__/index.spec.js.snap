@@ -15,6 +15,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "Boolean",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "commerce",
         "type": Object {
           "name": null,
@@ -31,7 +39,7 @@ Object {
       Object {
         "args": Array [],
         "description": "",
-        "name": "Boolean",
+        "name": "database",
         "type": Object {
           "name": null,
         },
@@ -192,6 +200,12 @@ Object {
         "LLC",
         "Group",
       ],
+    },
+    "database": Object {
+      "collation": "cp1250_general_ci",
+      "column": "title",
+      "engine": "BLACKHOLE",
+      "type": "timestamp",
     },
   },
 }
