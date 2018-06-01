@@ -15,6 +15,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "commerce",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Boolean",
         "type": Object {
           "name": null,
@@ -149,6 +157,15 @@ Object {
       "streetPrefix": "b",
       "streetSuffix": "Ranch",
       "zipCode": "59075",
+    },
+    "commerce": Object {
+      "color": "silver",
+      "department": "Computers",
+      "price": 402,
+      "product": "Shirt",
+      "productAdjective": "Awesome",
+      "productMaterial": "Rubber",
+      "productName": "Gorgeous Plastic Chicken",
     },
   },
 }

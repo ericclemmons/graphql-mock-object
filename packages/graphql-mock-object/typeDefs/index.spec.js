@@ -94,6 +94,16 @@ describe("typeDefs", () => {
             streetSuffix
             zipCode
           }
+
+          commerce {
+            color
+            department
+            price
+            product
+            productAdjective
+            productMaterial
+            productName
+          }
         }
       }`
 

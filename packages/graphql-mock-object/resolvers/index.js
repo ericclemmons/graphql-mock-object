@@ -31,11 +31,23 @@ export const MockAddress = {
   zipCode: fakerResolver("{{address.zipCode}}"),
 }
 
+export const MockCommerce = {
+  color: fakerResolver("{{commerce.color}}"),
+  department: fakerResolver("{{commerce.department}}"),
+  price: fakerResolver("{{commerce.price}}"),
+  product: fakerResolver("{{commerce.product}}"),
+  productAdjective: fakerResolver("{{commerce.productAdjective}}"),
+  productName: fakerResolver("{{commerce.productName}}"),
+  productMaterial: fakerResolver("{{commerce.productMaterial}}"),
+}
+
 export const MockObject = {
   address(parent, args) {
     return {}
   },
-
+  commerce(parent, args) {
+    return {}
+  },
   Boolean: fakerResolver("{{random.boolean}}"),
   Float: fakerResolver("0.{{random.number}}"),
   ID: fakerResolver("{{random.number}}"),
@@ -61,6 +73,7 @@ export const Query = {
 
 export const resolvers = {
   MockAddress,
+  MockCommerce,
   MockObject,
   Query,
 }

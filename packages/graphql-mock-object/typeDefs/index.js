@@ -1,4 +1,4 @@
-export const MockObject = `
+export const MockAddress = `
   type MockAddress {
     city: String!
     cityPrefix: String!
@@ -16,9 +16,23 @@ export const MockObject = `
     streetSuffix: String!
     zipCode: String!
   }
+`
 
+export const MockCommerce = `
+  type MockCommerce {
+    color: String!
+    department: String!
+    price: Float!
+    product: String!
+    productAdjective: String!
+    productName: String!
+    productMaterial: String!
+  }
+`
+export const MockObject = `
   type MockObject {
     address: MockAddress!
+    commerce: MockCommerce!
     Boolean: Boolean!
     Float: Float!
     ID(value: String): ID!
@@ -36,4 +50,4 @@ export const Query = `
   }
 `
 
-export const typeDefs = [MockObject, Query]
+export const typeDefs = [MockAddress, MockCommerce, MockObject, Query]
