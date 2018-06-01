@@ -75,6 +75,16 @@ describe("typeDefs", () => {
     })
 
     it("should support faker.js", async () => {
+      const date = new Date("Mon, 01 Jan 2018 08:00:00 GMT")
+
+      global.Date = class extends Date {
+        constructor() {
+          super()
+
+          return date
+        }
+      }
+
       const query = `{
         Mock {
           address {
@@ -124,6 +134,18 @@ describe("typeDefs", () => {
             column
             engine
             type
+          }
+
+          date {
+            between(
+              from: "Mon, 01 Jan 2018 08:00:00 GMT"
+              to: "Tues, 01 Jan 2019 08:00:00 GMT"
+            )
+            future
+            month
+            past
+            recent
+            weekday
           }
         }
       }`

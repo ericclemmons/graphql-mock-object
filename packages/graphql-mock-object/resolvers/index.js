@@ -64,12 +64,30 @@ export const MockDatabase = {
   type: fakerResolver("{{database.type}}"),
 }
 
+export const MockDate = {
+  between(parent, args) {
+    return faker.date.between(args.from, args.to)
+  },
+  future(parent, args) {
+    return faker.date.future(args.years, args.refDate)
+  },
+  month: fakerResolver("{{date.month}}"),
+  past(parent, args) {
+    return faker.date.past(args.years, args.refDate)
+  },
+  recent(parent, args) {
+    return faker.date.recent(args.days)
+  },
+  weekday: fakerResolver("{{date.weekday}}"),
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
   commerce: () => ({}),
   company: () => ({}),
   database: () => ({}),
+  date: () => ({}),
   Float: fakerResolver("0.{{random.number}}"),
   ID: fakerResolver("{{random.number}}"),
   Int: fakerResolver("{{random.number}}"),
@@ -97,6 +115,7 @@ export const resolvers = {
   MockCommerce,
   MockCompany,
   MockDatabase,
+  MockDate,
   MockObject,
   Query,
 }

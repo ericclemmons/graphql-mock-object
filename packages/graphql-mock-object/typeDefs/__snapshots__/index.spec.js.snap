@@ -47,6 +47,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "date",
+        "type": Object {
+          "name": "MockDate",
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Float",
         "type": Object {
           "name": null,
@@ -206,6 +214,14 @@ Object {
       "column": "title",
       "engine": "BLACKHOLE",
       "type": "timestamp",
+    },
+    "date": Object {
+      "between": "Mon Jan 01 2018 00:00:00 GMT-0800 (PST)",
+      "future": "Tue Oct 23 2018 07:13:11 GMT-0700 (PDT)",
+      "month": "November",
+      "past": "Wed May 30 2018 16:03:32 GMT-0700 (PDT)",
+      "recent": "Wed May 30 2018 06:59:12 GMT-0700 (PDT)",
+      "weekday": "Tuesday",
     },
   },
 }

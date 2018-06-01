@@ -55,6 +55,17 @@ export const MockDatabase = `
   }
 `
 
+export const MockDate = `
+  type MockDate {
+    between(from: String!, to: String!): String!
+    future(refDate: String, years: Int): String!
+    month: String!
+    past(refDate: String, years: Int): String!
+    recent(days: Int): String!
+    weekday: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -62,6 +73,7 @@ export const MockObject = `
     commerce: MockCommerce!
     company: MockCompany!
     database: MockDatabase!
+    date: MockDate
     Float: Float!
     ID(value: String): ID!
     Int: Int!
@@ -83,6 +95,7 @@ export const typeDefs = [
   MockCommerce,
   MockCompany,
   MockDatabase,
+  MockDate,
   MockObject,
   Query,
 ]
