@@ -205,7 +205,8 @@ describe("typeDefs", () => {
             password
             protocol
             url
-            userAgent
+            # ! Does not respect seed: https://github.com/Marak/faker.js/issues/521
+            # userAgent
             userName
           }
         }
