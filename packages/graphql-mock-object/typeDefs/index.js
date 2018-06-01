@@ -93,6 +93,28 @@ export const MockHacker = `
   }
 `
 
+export const MockImage = `
+  type MockImage {
+    abstract(width: Int, height: Int, random: Boolean): String!
+    animals(width: Int, height: Int, random: Boolean): String!
+    avatar: String!
+    business(width: Int, height: Int, random: Boolean): String!
+    cats(width: Int, height: Int, random: Boolean): String!
+    city(width: Int, height: Int, random: Boolean): String!
+    dataUri(width: Int, height: Int): String!
+    fashion(width: Int, height: Int, random: Boolean): String!
+    food(width: Int, height: Int, random: Boolean): String!
+    image(width: Int, height: Int, random: Boolean): String!
+    imageUrl(width: Int, height: Int, random: Boolean): String!
+    nature(width: Int, height: Int, random: Boolean): String!
+    nightlife(width: Int, height: Int, random: Boolean): String!
+    people(width: Int, height: Int, random: Boolean): String!
+    sports(width: Int, height: Int, random: Boolean): String!
+    technics(width: Int, height: Int, random: Boolean): String!
+    transport(width: Int, height: Int, random: Boolean): String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -105,6 +127,7 @@ export const MockObject = `
     Float: Float!
     hacker: MockHacker!
     ID(value: String): ID!
+    image: MockImage!
     Int: Int!
     List(length: Int = 0): [MockObject]!
     Mock(seed: Int): MockObject!
@@ -127,6 +150,7 @@ export const typeDefs = [
   MockDate,
   MockFinance,
   MockHacker,
+  MockImage,
   MockObject,
   Query,
 ]

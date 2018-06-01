@@ -6,7 +6,7 @@ import { version } from "../package.json"
 // version change will yield different resultsl
 const majorVersion = parseInt(version.match(/\d+/g).shift(), 10) || 1
 
-const fakerResolver = template => (parent, args) => {
+const fakerResolver = (template) => (parent, args) => {
   const { value = template } = args
 
   return faker.fake(value)
@@ -104,6 +104,60 @@ export const MockHacker = {
   verb: fakerResolver("{{hacker.verb}}"),
 }
 
+export const MockImage = {
+  abstract(parent, { width, height, randomize }) {
+    return faker.image.abstract(width, height, randomize)
+  },
+  animals(parent, { width, height, randomize }) {
+    return faker.image.animals(width, height, randomize)
+  },
+  avatar() {
+    return faker.image.avatar()
+  },
+  business(parent, { width, height, randomize }) {
+    return faker.image.business(width, height, randomize)
+  },
+  cats(parent, { width, height, randomize }) {
+    return faker.image.cats(width, height, randomize)
+  },
+  city(parent, { width, height, randomize }) {
+    return faker.image.city(width, height, randomize)
+  },
+  dataUri(parent, { width, height }) {
+    return faker.image.dataUri(width, height)
+  },
+  fashion(parent, { width, height, randomize }) {
+    return faker.image.fashion(width, height, randomize)
+  },
+  food(parent, { width, height, randomize }) {
+    return faker.image.food(width, height, randomize)
+  },
+  image(parent, { width, height, randomize }) {
+    return faker.image.image(width, height, randomize)
+  },
+  imageUrl(parent, { width, height, randomize }) {
+    return faker.image.imageUrl(width, height, randomize)
+  },
+  nature(parent, { width, height, randomize }) {
+    return faker.image.nature(width, height, randomize)
+  },
+  nightlife(parent, { width, height, randomize }) {
+    return faker.image.nightlife(width, height, randomize)
+  },
+  people(parent, { width, height, randomize }) {
+    return faker.image.people(width, height, randomize)
+  },
+  sports(parent, { width, height, randomize }) {
+    return faker.image.sports(width, height, randomize)
+  },
+  technics(parent, { width, height, randomize }) {
+    return faker.image.technics(width, height, randomize)
+  },
+  transport(parent, { width, height, randomize }) {
+    return faker.image.transport(width, height, randomize)
+  },
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -115,6 +169,7 @@ export const MockObject = {
   Float: fakerResolver("0.{{random.number}}"),
   hacker: () => ({}),
   ID: fakerResolver("{{random.number}}"),
+  image: () => ({}),
   Int: fakerResolver("{{random.number}}"),
   List(parent, args) {
     const { length } = args
@@ -143,6 +198,7 @@ export const resolvers = {
   MockDate,
   MockFinance,
   MockHacker,
+  MockImage,
   MockObject,
   Query,
 }

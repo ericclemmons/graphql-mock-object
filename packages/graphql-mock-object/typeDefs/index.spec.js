@@ -170,6 +170,26 @@ describe("typeDefs", () => {
             phrase
             verb
           }
+
+          image {
+            abstract
+            animals
+            avatar
+            business
+            cats
+            city
+            dataUri
+            fashion
+            food
+            image
+            imageUrl
+            nature
+            nightlife
+            people
+            sports
+            technics
+            transport
+          }
         }
       }`
 
