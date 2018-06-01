@@ -242,6 +242,7 @@ export const MockObject = {
     return faker.fake(template)
   },
   random: () => ({}),
+  system: () => ({}),
 }
 
 export const MockPhone = {
@@ -263,6 +264,17 @@ export const MockRandom = {
   words: () => faker.random.words(),
 }
 
+export const MockSystem = {
+  commonFileExt: () => faker.system.commonFileExt(),
+  commonFileName: () => faker.system.commonFileName(),
+  commonFileType: () => faker.system.commonFileType(),
+  fileExt: () => faker.system.fileExt(),
+  fileName: () => faker.system.fileName(),
+  fileType: () => faker.system.fileType(),
+  mimeType: () => faker.system.mimeType(),
+  semver: () => faker.system.semver(),
+}
+
 export const Query = {
   Mock: MockObject.Mock,
 }
@@ -282,5 +294,6 @@ export const resolvers = {
   MockObject,
   MockPhone,
   MockRandom,
+  MockSystem,
   Query,
 }

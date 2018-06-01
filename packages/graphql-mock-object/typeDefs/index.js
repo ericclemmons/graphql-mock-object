@@ -187,6 +187,7 @@ export const MockObject = `
     phone: MockPhone!
     random: MockRandom!
     String(value: String): String!
+    system: MockSystem!
   }
 `
 
@@ -213,6 +214,23 @@ export const MockRandom = `
   }
 `
 
+export const MockSystem = `
+  type MockSystem {
+    commonFileExt: String!
+    commonFileName: String!
+    commonFileType: String!
+    # ! Not yet implemented
+    # directoryPath: String!
+    fileExt: String!
+    fileName: String!
+    # ! Not yet implemented
+    # filePath: String!
+    fileType: String!
+    mimeType: String!
+    semver: String!
+  }
+`
+
 export const Query = `
   type Query {
     Mock(seed: Int): MockObject
@@ -234,5 +252,6 @@ export const typeDefs = [
   MockObject,
   MockPhone,
   MockRandom,
+  MockSystem,
   Query,
 ]

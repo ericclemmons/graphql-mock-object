@@ -253,6 +253,17 @@ describe("typeDefs", () => {
             word
             words
           }
+
+          system {
+            commonFileExt
+            commonFileName
+            commonFileType
+            fileExt
+            fileName
+            fileType
+            mimeType
+            semver
+          }
         }
       }`
 

@@ -196,6 +196,14 @@ Object {
           "name": null,
         },
       },
+      Object {
+        "args": Array [],
+        "description": "",
+        "name": "system",
+        "type": Object {
+          "name": null,
+        },
+      },
     ],
     "inputFields": null,
   },
@@ -387,6 +395,16 @@ Ea rerum rerum. Nemo quasi veniam beatae numquam ut. Architecto consequuntur sit
       "uuid": "d0e03d4d-e052-40ab-a6bb-c71866e4ce3a",
       "word": "Seamless",
       "words": "Legacy Inverse Principal",
+    },
+    "system": Object {
+      "commonFileExt": "m2v",
+      "commonFileName": "awesome_granite_computer_png.gif",
+      "commonFileType": "application",
+      "fileExt": "hvp",
+      "fileName": "fresh_generic_rubber_cheese.sxm",
+      "fileType": "application",
+      "mimeType": "application/x-gca-compressed",
+      "semver": "2.7.6",
     },
   },
 }
