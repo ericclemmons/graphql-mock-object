@@ -167,6 +167,14 @@ Object {
         },
       },
       Object {
+        "args": Array [],
+        "description": "",
+        "name": "phone",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
         "args": Array [
           Object {
             "defaultValue": null,
@@ -354,6 +362,11 @@ Ea rerum rerum. Nemo quasi veniam beatae numquam ut. Architecto consequuntur sit
       "prefix": "Dr.",
       "suffix": "DVM",
       "title": "International Usability Liaison",
+    },
+    "phone": Object {
+      "phoneFormats": "(###) ###-#### x###",
+      "phoneNumber": "1-786-649-8318 x840",
+      "phoneNumberFormat": "887-614-7684",
     },
   },
 }

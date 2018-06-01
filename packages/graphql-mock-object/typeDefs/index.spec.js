@@ -234,6 +234,12 @@ describe("typeDefs", () => {
             suffix
             title
           }
+
+          phone {
+            phoneFormats
+            phoneNumber
+            phoneNumberFormat
+          }
         }
       }`
 

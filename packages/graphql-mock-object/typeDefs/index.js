@@ -184,7 +184,16 @@ export const MockObject = `
     Mock(seed: Int): MockObject!
     name: MockName!
     Null: String
+    phone: MockPhone!
     String(value: String): String!
+  }
+`
+
+export const MockPhone = `
+  type MockPhone {
+    phoneFormats: String!
+    phoneNumber: String!
+    phoneNumberFormat: String!
   }
 `
 
@@ -207,5 +216,6 @@ export const typeDefs = [
   MockLorem,
   MockName,
   MockObject,
+  MockPhone,
   Query,
 ]

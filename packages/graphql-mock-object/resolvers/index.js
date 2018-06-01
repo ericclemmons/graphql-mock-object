@@ -229,7 +229,14 @@ export const MockObject = {
     return {}
   },
   name: () => ({}),
+  phone: () => ({}),
   String: fakerResolver("{{lorem.sentence}}"),
+}
+
+export const MockPhone = {
+  phoneFormats: fakerResolver("{{phone.phoneFormats}}"),
+  phoneNumber: fakerResolver("{{phone.phoneNumber}}"),
+  phoneNumberFormat: fakerResolver("{{phone.phoneNumberFormat}}"),
 }
 
 export const Query = {
@@ -249,5 +256,6 @@ export const resolvers = {
   MockLorem,
   MockName,
   MockObject,
+  MockPhone,
   Query,
 }
