@@ -95,6 +95,15 @@ export const MockFinance = {
   transactionType: fakerResolver("{{finance.transactionType}}"),
 }
 
+export const MockHacker = {
+  abbreviation: fakerResolver("{{hacker.abbreviation}}"),
+  adjective: fakerResolver("{{hacker.adjective}}"),
+  ingverb: fakerResolver("{{hacker.ingverb}}"),
+  noun: fakerResolver("{{hacker.noun}}"),
+  phrase: fakerResolver("{{hacker.phrase}}"),
+  verb: fakerResolver("{{hacker.verb}}"),
+}
+
 export const MockObject = {
   address: () => ({}),
   Boolean: fakerResolver("{{random.boolean}}"),
@@ -104,6 +113,7 @@ export const MockObject = {
   date: () => ({}),
   finance: () => ({}),
   Float: fakerResolver("0.{{random.number}}"),
+  hacker: () => ({}),
   ID: fakerResolver("{{random.number}}"),
   Int: fakerResolver("{{random.number}}"),
   List(parent, args) {
@@ -132,6 +142,7 @@ export const resolvers = {
   MockDatabase,
   MockDate,
   MockFinance,
+  MockHacker,
   MockObject,
   Query,
 }

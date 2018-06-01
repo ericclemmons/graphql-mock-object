@@ -161,6 +161,15 @@ describe("typeDefs", () => {
             mask
             transactionType
           }
+
+          hacker {
+            abbreviation
+            adjective
+            ingverb
+            noun
+            phrase
+            verb
+          }
         }
       }`
 

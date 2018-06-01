@@ -82,6 +82,17 @@ export const MockFinance = `
   }
 `
 
+export const MockHacker = `
+  type MockHacker {
+    abbreviation: String!
+    adjective: String!
+    ingverb: String!
+    noun: String!
+    phrase: String!
+    verb: String!
+  }
+`
+
 export const MockObject = `
   type MockObject {
     address: MockAddress!
@@ -92,6 +103,7 @@ export const MockObject = `
     date: MockDate!
     finance: MockFinance!
     Float: Float!
+    hacker: MockHacker!
     ID(value: String): ID!
     Int: Int!
     List(length: Int = 0): [MockObject]!
@@ -114,6 +126,7 @@ export const typeDefs = [
   MockDatabase,
   MockDate,
   MockFinance,
+  MockHacker,
   MockObject,
   Query,
 ]

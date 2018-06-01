@@ -69,6 +69,14 @@ Object {
         },
       },
       Object {
+        "args": Array [],
+        "description": "",
+        "name": "hacker",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
         "args": Array [
           Object {
             "defaultValue": null,
@@ -243,6 +251,14 @@ Object {
       "iban": "DE30845851030092005075",
       "mask": "4952",
       "transactionType": "deposit",
+    },
+    "hacker": Object {
+      "abbreviation": "JSON",
+      "adjective": "primary",
+      "ingverb": "compressing",
+      "noun": "microchip",
+      "phrase": "We need to synthesize the mobile GB bandwidth!",
+      "verb": "hack",
     },
   },
 }
