@@ -6,28 +6,40 @@ import { version } from "../package.json"
 // version change will yield different resultsl
 const majorVersion = parseInt(version.match(/\d+/g).shift(), 10) || 1
 
+const fakerResolver = template => (parent, args) => {
+  const { value = template } = args
+
+  return faker.fake(value)
+}
+
 // The resolvers
+export const MockAddress = {
+  city: fakerResolver("{{address.city}}"),
+  cityPrefix: fakerResolver("{{address.cityPrefix}}"),
+  country: fakerResolver("{{address.country}}"),
+  countryCode: fakerResolver("{{address.countryCode}}"),
+  county: fakerResolver("{{address.county}}"),
+  latitude: fakerResolver("{{address.latitude}}"),
+  longitude: fakerResolver("{{address.longitude}}"),
+  secondaryAddress: fakerResolver("{{address.secondaryAddress}}"),
+  state: fakerResolver("{{address.state}}"),
+  stateAbbr: fakerResolver("{{address.stateAbbr}}"),
+  streetAddress: fakerResolver("{{address.streetAddress}}"),
+  streetName: fakerResolver("{{address.streetName}}"),
+  streetPrefix: fakerResolver("{{address.streetPrefix}}"),
+  streetSuffix: fakerResolver("{{address.streetSuffix}}"),
+  zipCode: fakerResolver("{{address.zipCode}}"),
+}
+
 export const MockObject = {
-  Boolean(parent, args) {
-    const { value = "{{random.boolean}}" } = args
-
-    return faker.fake(value)
+  address(parent, args) {
+    return {}
   },
-  Float(parent, args) {
-    const { value = "0.{{random.number}}" } = args
 
-    return faker.fake(value)
-  },
-  ID(parent, args) {
-    const { value = "{{random.number}}" } = args
-
-    return faker.fake(value)
-  },
-  Int(parent, args) {
-    const { value = "{{random.number}}" } = args
-
-    return faker.fake(value)
-  },
+  Boolean: fakerResolver("{{random.boolean}}"),
+  Float: fakerResolver("0.{{random.number}}"),
+  ID: fakerResolver("{{random.number}}"),
+  Int: fakerResolver("{{random.number}}"),
   List(parent, args) {
     const { length } = args
 
@@ -40,11 +52,7 @@ export const MockObject = {
 
     return {}
   },
-  String(parent, args) {
-    const { value = "{{lorem.sentence}}" } = args
-
-    return faker.fake(value)
-  },
+  String: fakerResolver("{{lorem.sentence}}"),
 }
 
 export const Query = {
@@ -52,6 +60,7 @@ export const Query = {
 }
 
 export const resolvers = {
+  MockAddress,
   MockObject,
   Query,
 }

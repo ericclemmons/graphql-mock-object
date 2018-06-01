@@ -73,5 +73,34 @@ describe("typeDefs", () => {
 
       expect(duplicate.data).toEqual(data)
     })
+
+    it("should support faker.js", async () => {
+      const query = `{
+        Mock {
+          address {
+            city
+            cityPrefix
+            country
+            countryCode
+            county
+            latitude
+            longitude
+            secondaryAddress
+            state
+            stateAbbr
+            streetAddress
+            streetName
+            streetPrefix
+            streetSuffix
+            zipCode
+          }
+        }
+      }`
+
+      const { data, errors } = await runQuery({ query, schema })
+
+      expect(errors).toBeUndefined()
+      expect(data).toMatchSnapshot()
+    })
   })
 })

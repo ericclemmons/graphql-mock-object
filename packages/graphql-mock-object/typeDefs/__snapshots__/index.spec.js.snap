@@ -7,6 +7,14 @@ Object {
       Object {
         "args": Array [],
         "description": "",
+        "name": "address",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
+        "args": Array [],
+        "description": "",
         "name": "Boolean",
         "type": Object {
           "name": null,
@@ -67,7 +75,7 @@ Object {
         "description": "",
         "name": "Mock",
         "type": Object {
-          "name": "MockObject",
+          "name": null,
         },
       },
       Object {
@@ -118,6 +126,30 @@ Object {
     },
     "Null": null,
     "String": "Impedit voluptas nostrum.",
+  },
+}
+`;
+
+exports[`typeDefs MockObject should support faker.js 1`] = `
+Object {
+  "Mock": Object {
+    "address": Object {
+      "city": "Antonechester",
+      "cityPrefix": "Lake",
+      "country": "Finland",
+      "countryCode": "BQ",
+      "county": "Borders",
+      "latitude": 12.476,
+      "longitude": 141.4609,
+      "secondaryAddress": "Apt. 801",
+      "state": "Arizona",
+      "stateAbbr": "HI",
+      "streetAddress": "00460 Klein Crossroad",
+      "streetName": "Gottlieb Ports",
+      "streetPrefix": "b",
+      "streetSuffix": "Ranch",
+      "zipCode": "59075",
+    },
   },
 }
 `;
