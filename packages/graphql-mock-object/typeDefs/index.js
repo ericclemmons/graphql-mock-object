@@ -185,6 +185,7 @@ export const MockObject = `
     name: MockName!
     Null: String
     phone: MockPhone!
+    random: MockRandom!
     String(value: String): String!
   }
 `
@@ -194,6 +195,21 @@ export const MockPhone = `
     phoneFormats: String!
     phoneNumber: String!
     phoneNumberFormat: String!
+  }
+`
+
+export const MockRandom = `
+  type MockRandom {
+    alphaNumeric: String!
+    arrayElement: String!
+    boolean: Boolean!
+    image: String!
+    locale: String!
+    number: Int!
+    objectElement: String!
+    uuid: String!
+    word: String!
+    words: String!
   }
 `
 
@@ -217,5 +233,6 @@ export const typeDefs = [
   MockName,
   MockObject,
   MockPhone,
+  MockRandom,
   Query,
 ]

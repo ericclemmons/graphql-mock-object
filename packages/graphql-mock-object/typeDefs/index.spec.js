@@ -240,6 +240,19 @@ describe("typeDefs", () => {
             phoneNumber
             phoneNumberFormat
           }
+
+          random {
+            alphaNumeric
+            arrayElement
+            boolean
+            image
+            locale
+            number
+            objectElement
+            uuid
+            word
+            words
+          }
         }
       }`
 

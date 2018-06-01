@@ -175,6 +175,14 @@ Object {
         },
       },
       Object {
+        "args": Array [],
+        "description": "",
+        "name": "random",
+        "type": Object {
+          "name": null,
+        },
+      },
+      Object {
         "args": Array [
           Object {
             "defaultValue": null,
@@ -367,6 +375,18 @@ Ea rerum rerum. Nemo quasi veniam beatae numquam ut. Architecto consequuntur sit
       "phoneFormats": "(###) ###-#### x###",
       "phoneNumber": "1-786-649-8318 x840",
       "phoneNumberFormat": "887-614-7684",
+    },
+    "random": Object {
+      "alphaNumeric": "m",
+      "arrayElement": "c",
+      "boolean": false,
+      "image": "http://lorempixel.com/640/480/animals",
+      "locale": "en_BORK",
+      "number": 50815,
+      "objectElement": "car",
+      "uuid": "d0e03d4d-e052-40ab-a6bb-c71866e4ce3a",
+      "word": "Seamless",
+      "words": "Legacy Inverse Principal",
     },
   },
 }

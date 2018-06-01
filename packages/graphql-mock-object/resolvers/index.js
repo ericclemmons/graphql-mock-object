@@ -14,54 +14,54 @@ const fakerResolver = (template) => (parent, args) => {
 
 // The resolvers
 export const MockAddress = {
-  city: fakerResolver("{{address.city}}"),
-  cityPrefix: fakerResolver("{{address.cityPrefix}}"),
-  country: fakerResolver("{{address.country}}"),
-  countryCode: fakerResolver("{{address.countryCode}}"),
-  county: fakerResolver("{{address.county}}"),
-  latitude: fakerResolver("{{address.latitude}}"),
-  longitude: fakerResolver("{{address.longitude}}"),
-  secondaryAddress: fakerResolver("{{address.secondaryAddress}}"),
-  state: fakerResolver("{{address.state}}"),
-  stateAbbr: fakerResolver("{{address.stateAbbr}}"),
-  streetAddress: fakerResolver("{{address.streetAddress}}"),
-  streetName: fakerResolver("{{address.streetName}}"),
-  streetPrefix: fakerResolver("{{address.streetPrefix}}"),
-  streetSuffix: fakerResolver("{{address.streetSuffix}}"),
-  zipCode: fakerResolver("{{address.zipCode}}"),
+  city: () => faker.address.city(),
+  cityPrefix: () => faker.address.cityPrefix(),
+  country: () => faker.address.country(),
+  countryCode: () => faker.address.countryCode(),
+  county: () => faker.address.county(),
+  latitude: () => faker.address.latitude(),
+  longitude: () => faker.address.longitude(),
+  secondaryAddress: () => faker.address.secondaryAddress(),
+  state: () => faker.address.state(),
+  stateAbbr: () => faker.address.stateAbbr(),
+  streetAddress: () => faker.address.streetAddress(),
+  streetName: () => faker.address.streetName(),
+  streetPrefix: () => faker.address.streetPrefix(),
+  streetSuffix: () => faker.address.streetSuffix(),
+  zipCode: () => faker.address.zipCode(),
 }
 
 export const MockCommerce = {
-  color: fakerResolver("{{commerce.color}}"),
-  department: fakerResolver("{{commerce.department}}"),
-  price: fakerResolver("{{commerce.price}}"),
-  product: fakerResolver("{{commerce.product}}"),
-  productAdjective: fakerResolver("{{commerce.productAdjective}}"),
-  productName: fakerResolver("{{commerce.productName}}"),
-  productMaterial: fakerResolver("{{commerce.productMaterial}}"),
+  color: () => faker.commerce.color(),
+  department: () => faker.commerce.department(),
+  price: () => faker.commerce.price(),
+  product: () => faker.commerce.product(),
+  productAdjective: () => faker.commerce.productAdjective(),
+  productName: () => faker.commerce.productName(),
+  productMaterial: () => faker.commerce.productMaterial(),
 }
 
 export const MockCompany = {
-  bs: fakerResolver("{{company.bs}}"),
-  bsAdjective: fakerResolver("{{company.bsAdjective}}"),
-  bsBuzz: fakerResolver("{{company.bsBuzz}}"),
-  bsNoun: fakerResolver("{{company.bsNoun}}"),
-  catchPhraseAdjective: fakerResolver("{{company.catchPhraseAdjective}}"),
-  catchPhraseDescriptor: fakerResolver("{{company.catchPhraseDescriptor}}"),
-  catchPhrase: fakerResolver("{{company.catchPhrase}}"),
-  catchPhraseNoun: fakerResolver("{{company.catchPhraseNoun}}"),
-  companyName: fakerResolver("{{company.companyName}}"),
-  companySuffix: fakerResolver("{{company.companySuffix}}"),
+  bs: () => faker.company.bs(),
+  bsAdjective: () => faker.company.bsAdjective(),
+  bsBuzz: () => faker.company.bsBuzz(),
+  bsNoun: () => faker.company.bsNoun(),
+  catchPhraseAdjective: () => faker.company.catchPhraseAdjective(),
+  catchPhraseDescriptor: () => faker.company.catchPhraseDescriptor(),
+  catchPhrase: () => faker.company.catchPhrase(),
+  catchPhraseNoun: () => faker.company.catchPhraseNoun(),
+  companyName: () => faker.company.companyName(),
+  companySuffix: () => faker.company.companySuffix(),
   suffixes(parent, args) {
     return faker.company.suffixes()
   },
 }
 
 export const MockDatabase = {
-  collation: fakerResolver("{{database.collation}}"),
-  column: fakerResolver("{{database.column}}"),
-  engine: fakerResolver("{{database.engine}}"),
-  type: fakerResolver("{{database.type}}"),
+  collation: () => faker.database.collation(),
+  column: () => faker.database.column(),
+  engine: () => faker.database.engine(),
+  type: () => faker.database.type(),
 }
 
 export const MockDate = {
@@ -71,37 +71,37 @@ export const MockDate = {
   future(parent, args) {
     return faker.date.future(args.years, args.refDate)
   },
-  month: fakerResolver("{{date.month}}"),
+  month: () => faker.date.month(),
   past(parent, args) {
     return faker.date.past(args.years, args.refDate)
   },
   recent(parent, args) {
     return faker.date.recent(args.days)
   },
-  weekday: fakerResolver("{{date.weekday}}"),
+  weekday: () => faker.date.weekday(),
 }
 
 export const MockFinance = {
-  account: fakerResolver("{{finance.account}}"),
-  accountName: fakerResolver("{{finance.accountName}}"),
-  amount: fakerResolver("{{finance.amount}}"),
-  bic: fakerResolver("{{finance.bic}}"),
-  bitcoinAddress: fakerResolver("{{finance.bitcoinAddress}}"),
-  currencyCode: fakerResolver("{{finance.currencyCode}}"),
-  currencyName: fakerResolver("{{finance.currencyName}}"),
-  currencySymbol: fakerResolver("{{finance.currencySymbol}}"),
-  iban: fakerResolver("{{finance.iban}}"),
-  mask: fakerResolver("{{finance.mask}}"),
-  transactionType: fakerResolver("{{finance.transactionType}}"),
+  account: () => faker.finance.account(),
+  accountName: () => faker.finance.accountName(),
+  amount: () => faker.finance.amount(),
+  bic: () => faker.finance.bic(),
+  bitcoinAddress: () => faker.finance.bitcoinAddress(),
+  currencyCode: () => faker.finance.currencyCode(),
+  currencyName: () => faker.finance.currencyName(),
+  currencySymbol: () => faker.finance.currencySymbol(),
+  iban: () => faker.finance.iban(),
+  mask: () => faker.finance.mask(),
+  transactionType: () => faker.finance.transactionType(),
 }
 
 export const MockHacker = {
-  abbreviation: fakerResolver("{{hacker.abbreviation}}"),
-  adjective: fakerResolver("{{hacker.adjective}}"),
-  ingverb: fakerResolver("{{hacker.ingverb}}"),
-  noun: fakerResolver("{{hacker.noun}}"),
-  phrase: fakerResolver("{{hacker.phrase}}"),
-  verb: fakerResolver("{{hacker.verb}}"),
+  abbreviation: () => faker.hacker.abbreviation(),
+  adjective: () => faker.hacker.adjective(),
+  ingverb: () => faker.hacker.ingverb(),
+  noun: () => faker.hacker.noun(),
+  phrase: () => faker.hacker.phrase(),
+  verb: () => faker.hacker.verb(),
 }
 
 export const MockImage = {
@@ -159,51 +159,51 @@ export const MockImage = {
 }
 
 export const MockInternet = {
-  avatar: fakerResolver("{{internet.avatar}}"),
-  color: fakerResolver("{{internet.color}}"),
-  domainName: fakerResolver("{{internet.domainName}}"),
-  domainSuffix: fakerResolver("{{internet.domainSuffix}}"),
-  domainWord: fakerResolver("{{internet.domainWord}}"),
-  email: fakerResolver("{{internet.email}}"),
-  exampleEmail: fakerResolver("{{internet.exampleEmail}}"),
-  ip: fakerResolver("{{internet.ip}}"),
-  ipv6: fakerResolver("{{internet.ipv6}}"),
-  mac: fakerResolver("{{internet.mac}}"),
-  password: fakerResolver("{{internet.password}}"),
-  protocol: fakerResolver("{{internet.protocol}}"),
-  url: fakerResolver("{{internet.url}}"),
-  userAgent: fakerResolver("{{internet.userAgent}}"),
-  userName: fakerResolver("{{internet.userName}}"),
+  avatar: () => faker.internet.avatar(),
+  color: () => faker.internet.color(),
+  domainName: () => faker.internet.domainName(),
+  domainSuffix: () => faker.internet.domainSuffix(),
+  domainWord: () => faker.internet.domainWord(),
+  email: () => faker.internet.email(),
+  exampleEmail: () => faker.internet.exampleEmail(),
+  ip: () => faker.internet.ip(),
+  ipv6: () => faker.internet.ipv6(),
+  mac: () => faker.internet.mac(),
+  password: () => faker.internet.password(),
+  protocol: () => faker.internet.protocol(),
+  url: () => faker.internet.url(),
+  userAgent: () => faker.internet.userAgent(),
+  userName: () => faker.internet.userName(),
 }
 
 export const MockLorem = {
-  lines: fakerResolver("{{lorem.lines}}"),
-  paragraph: fakerResolver("{{lorem.paragraph}}"),
-  paragraphs: fakerResolver("{{lorem.paragraphs}}"),
-  sentence: fakerResolver("{{lorem.sentence}}"),
-  sentences: fakerResolver("{{lorem.sentences}}"),
-  slug: fakerResolver("{{lorem.slug}}"),
-  text: fakerResolver("{{lorem.text}}"),
-  word: fakerResolver("{{lorem.word}}"),
-  words: fakerResolver("{{lorem.words}}"),
+  lines: () => faker.lorem.lines(),
+  paragraph: () => faker.lorem.paragraph(),
+  paragraphs: () => faker.lorem.paragraphs(),
+  sentence: () => faker.lorem.sentence(),
+  sentences: () => faker.lorem.sentences(),
+  slug: () => faker.lorem.slug(),
+  text: () => faker.lorem.text(),
+  word: () => faker.lorem.word(),
+  words: () => faker.lorem.words(),
 }
 
 export const MockName = {
-  findName: fakerResolver("{{name.findName}}"),
-  firstName: fakerResolver("{{name.firstName}}"),
-  jobArea: fakerResolver("{{name.jobArea}}"),
-  jobDescriptor: fakerResolver("{{name.jobDescriptor}}"),
-  jobTitle: fakerResolver("{{name.jobTitle}}"),
-  jobType: fakerResolver("{{name.jobType}}"),
-  lastName: fakerResolver("{{name.lastName}}"),
-  prefix: fakerResolver("{{name.prefix}}"),
-  suffix: fakerResolver("{{name.suffix}}"),
-  title: fakerResolver("{{name.title}}"),
+  findName: () => faker.name.findName(),
+  firstName: () => faker.name.firstName(),
+  jobArea: () => faker.name.jobArea(),
+  jobDescriptor: () => faker.name.jobDescriptor(),
+  jobTitle: () => faker.name.jobTitle(),
+  jobType: () => faker.name.jobType(),
+  lastName: () => faker.name.lastName(),
+  prefix: () => faker.name.prefix(),
+  suffix: () => faker.name.suffix(),
+  title: () => faker.name.title(),
 }
 
 export const MockObject = {
   address: () => ({}),
-  Boolean: fakerResolver("{{random.boolean}}"),
+  Boolean: () => faker.random.boolean(),
   commerce: () => ({}),
   company: () => ({}),
   database: () => ({}),
@@ -231,12 +231,26 @@ export const MockObject = {
   name: () => ({}),
   phone: () => ({}),
   String: fakerResolver("{{lorem.sentence}}"),
+  random: () => ({}),
 }
 
 export const MockPhone = {
-  phoneFormats: fakerResolver("{{phone.phoneFormats}}"),
-  phoneNumber: fakerResolver("{{phone.phoneNumber}}"),
-  phoneNumberFormat: fakerResolver("{{phone.phoneNumberFormat}}"),
+  phoneFormats: () => faker.phone.phoneFormats(),
+  phoneNumber: () => faker.phone.phoneNumber(),
+  phoneNumberFormat: () => faker.phone.phoneNumberFormat(),
+}
+
+export const MockRandom = {
+  alphaNumeric: () => faker.random.alphaNumeric(),
+  arrayElement: () => faker.random.arrayElement(),
+  boolean: () => faker.random.boolean(),
+  image: () => faker.random.image(),
+  locale: () => faker.random.locale(),
+  number: () => faker.random.number(),
+  objectElement: () => faker.random.objectElement(),
+  uuid: () => faker.random.uuid(),
+  word: () => faker.random.word(),
+  words: () => faker.random.words(),
 }
 
 export const Query = {
@@ -257,5 +271,6 @@ export const resolvers = {
   MockName,
   MockObject,
   MockPhone,
+  MockRandom,
   Query,
 }
